@@ -1,14 +1,15 @@
 #inner {
     margin: auto;
     position: absolute;
-    background-color: grey;
-    width: 272px;
-    height: 147px;
-    top: 0;
+    width: 600px;
+    height: 600px; 
+    top: 50%;
     left: 0;
     bottom: 45%;
     right: 0;
     text-align: center;
+    overflow:auto;
+    display: inline-block;
 }
 #outer {
     width: 100%;
@@ -26,28 +27,77 @@ li {
     display: inline;
     padding: 0;
     margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 14px;
 }
 .right-nav{
     float: right;
-    padding: 3px;
+    padding: 10px;
 }
 .left-nav{
     float:left;
-    padding: 3px;
+    padding: 10px;
 }
-nav {
+header {
     overflow:auto;
     margin: 0;
     padding: 0;
 }
 footer{
     position: absolute;
-    overflow: hidden;
+    overflow: auto;
     width: 99%;
-    bottom: 10px;
+    bottom: 0;
     margin: 0;
-    padding: 0;
+    left: 0;
+    right: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(242, 242, 242);
+}
+a {
+    text-decoration: none;
+    color: rgb(95, 99, 104);
+}
+form {
+    padding: 20px;
 }
 input {
+    width: 525px;
+    height: 40px;
+    line-height: 34px !important;
+    border-radius: 20px;
+    border:1px solid rgb(223, 225, 229);
+    padding-left: 14px;
+    background-color: rgba(0,0,0,0);
+    font-size: 16px;
     
+}
+button {
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border: none;
+    color: rgb(95, 99, 104);
+    border-radius: 5px;
+}
+#buttons {
+    padding: 20px;
+    margin: 5px;
+}
+button:hover{
+    border: 1px solid #c6c6c6;
+    color: #222;
+    cursor: pointer;
+}
+ul li a:hover{
+    text-decoration: underline;
+}
+#apps {
+    background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+    background-position: -132px -38px;
+    background-size: 528px 68px;
+    width: 30px;
+    height: 10px;
 }
